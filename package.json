@@ -1,0 +1,23 @@
+{
+  "name": "mern-stack",
+  "version": "1.0.0",
+  "description": "A Mern stack application.",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && nodemon server.js",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
