@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd backend && nodemon server.js",
-    "client": "cd frontend && npm start",
-    "build": "cd frontend && npm run build"
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build"
   },
   "engines": {
     "node": ">=14.0.0"
