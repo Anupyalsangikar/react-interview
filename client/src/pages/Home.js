@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <div>
-      <h1>Welcome to the react code challenge</h1>
+      <h1>Welcome to the react code challenge...</h1>
 
       <p>
         In this challenge, we are going to build a simple frontend application
