@@ -30,7 +30,7 @@ jobs:
 
       # Step to specifically handle potential react-scripts issues
       - name: Ensure react-scripts is installed
-        run: npm install react-scripts react-dom --save
+        run: npm install react-scripts react-router-dom react-dom --save
               
       - name: Build project
         run: npm run build
