@@ -22,8 +22,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+      #- name: Install dependencies
+       # uses: bahmutov/npm-install@v1
 
       - name: Cache npm dependencies
         uses: actions/cache@v3
@@ -32,6 +32,13 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      
+      - name: Install dependencies
+        run: npm install
+
+      # Step to specifically handle potential react-scripts issues
+      - name: Ensure react-scripts is installed
+        run: npm install react-scripts --save
               
       - name: Build project
         run: npm run build
